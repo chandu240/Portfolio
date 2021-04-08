@@ -1,17 +1,20 @@
 
   h1 {
     color:#1e90ff;
-  }
-
-  /* * {
+    margin-left: 30px;
+  }  
+ .header * {
+    border: dashed;
     border:white;
     background-color: rgb(128,128,128);
-  }*/
+  }
 
   .header{
-      background-color: #ff6347 ;
+      background-size: 10px;
+      background-color: #ff6347;
       display: flex;
       justify-content:  space-between;
+      border:darkmagenta;
   }
 
   .site-description{
@@ -36,4 +39,32 @@
 
   body{
     background-color: #808080;
+  }
+  a:link{
+    color:rgb(11, 249, 253);
+  }
+  a:visited{
+    color:rgb(4, 70, 66);
+  }
+  .menu{
+    
+    margin-top: 10;
+    padding-top: 20px;
+    }
+  .menu a{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .item{
+    position: relative;
+  }
+  .item p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%,-70%);
+    opacity: 0;
+  }
+  .item:hover p{
+    opacity: 0.33;
   }
